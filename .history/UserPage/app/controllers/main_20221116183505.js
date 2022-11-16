@@ -154,7 +154,7 @@ const getProductCart = id => {
 const checkCartItem = id => {
     let temp = -1;
     arrCart.forEach((item, index) => {
-        if (item.phone.id == id) temp = index;
+        if (item.phone.id === id) temp = index;
     })
     return temp
 }
