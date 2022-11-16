@@ -1,0 +1,5 @@
+function getProductService() {
+    this.getProductList = () => {
+
+    }
+}

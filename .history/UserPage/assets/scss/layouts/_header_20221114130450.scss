@@ -1,0 +1,80 @@
+@import '../helpers/variable';
+@import '../components/animation';
+header {
+    .myNavBar {
+        // position: absolute;
+        // z-index: 1;
+        // width: 100%;
+        background: rgba( 255, 255, 255, 0.4);
+        box-shadow: 0 8px 32px 0 rgba(149, 151, 173, 0.37);
+        // backdrop-filter: blur( 4.5px);
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18);
+        #selectPhone {
+            border-radius: 5px;
+            padding: 5px;
+            width: 150px;
+            border: 1px solid rgba( 255, 255, 255, 0.18);
+            outline: none;
+            background: rgba( 255, 255, 255, 0.4);
+            font-weight: bold;
+            color: $title-color;
+        }
+        select {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            text-indent: 1px;
+            text-overflow: '';
+        }
+        .product__cart__icon {
+            position: relative;
+            .btnCart {
+                outline: none;
+                width: 50px;
+                height: 50px;
+                border: none;
+                border-radius: 5px;
+                transition: all .5s;
+                background: rgba(255, 255, 255, 0.4);
+                border: 1px solid rgba(255, 255, 255, 0.18);
+                box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+                i {
+                    font-size: 25px;
+                    color: $title-color;
+                    transition: all .5s;
+                }
+                &:hover {
+                    box-shadow: 0 8px 32px 0 rgba(79, 160, 207, 0.37);
+                    background: $title-color;
+                    i {
+                        color: #fff;
+                    }
+                }
+            }
+            &__quantity {
+                position: absolute;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background: rgba(238, 30, 30, 0.888);
+                top: -10px;
+                right: -15px;
+                text-align: center;
+                color: #fff;
+                font-weight: 500;
+                border: 1px solid rgba( 255, 255, 255, 0.18);
+            }
+        }
+        .product__cart__icon.effect {
+            .btnCart {
+                animation: divProduct 0.7s ease-in-out;
+                #iconCart {
+                    animation: iconProduct 0.7s ease-in-out;
+                }
+            }
+            #showQuantity {
+                animation: divProduct 0.7s ease-in-out;
+            }
+        }
+    }
+}

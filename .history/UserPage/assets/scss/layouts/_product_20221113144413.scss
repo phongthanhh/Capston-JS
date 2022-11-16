@@ -1,0 +1,31 @@
+@import '../helpers/variable';
+.product {
+    position: relative;
+    padding-top: 30px;
+    &__title {
+        color: $title-color;
+        font-weight: 400;
+    }
+    .card__main {
+        display: flex;
+        position: absolute;
+        width: 90%;
+        margin-left: 5%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    &__cart {
+        &__icon {
+            .btnCart {
+                outline: none;
+                width: 50px;
+                height: 50px;
+                border: none;
+                border-radius: 6px;
+                i {
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,10 @@
+@import '../helpers/variable';
+.product {
+    position: relative;
+    &__content {
+        position: absolute;
+        width: 90%;
+        margin-left: 5%;
+        justify-content: space-evenly;
+    }
+}

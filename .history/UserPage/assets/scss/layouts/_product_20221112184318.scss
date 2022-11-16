@@ -1,0 +1,11 @@
+@import '../helpers/variable';
+.product {
+    position: relative;
+    .card__main {
+        position: absolute;
+        width: 90%;
+        margin-left: 5%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+}

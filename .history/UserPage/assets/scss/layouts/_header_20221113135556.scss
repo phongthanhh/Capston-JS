@@ -1,0 +1,13 @@
+@import '../helpers/variable';
+header {
+    .myNavBar {
+        // position: absolute;
+        z-index: 1;
+        width: 100%;
+        background: rgba( 255, 255, 255, 0.4);
+        box-shadow: 0 8px 32px 0 rgba(149, 151, 173, 0.37);
+        backdrop-filter: blur( 4.5px);
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18);
+    }
+}

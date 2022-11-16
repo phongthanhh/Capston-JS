@@ -1,0 +1,17 @@
+@import '../helpers/variable';
+.product {
+    position: relative;
+    padding-top: 30px;
+    &__title {
+        color: $title-color;
+        font-weight: 500;
+    }
+    .card__main {
+        display: flex;
+        position: absolute;
+        width: 90%;
+        margin-left: 5%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+}

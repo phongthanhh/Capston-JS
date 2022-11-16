@@ -1,0 +1,42 @@
+@import '../helpers/variable';
+.myModal {
+    .modal-dialog {
+        max-width: 60%;
+        .modal-content {
+            background: rgba( 255, 255, 255, 0.7);
+            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+            backdrop-filter: blur( 5px);
+            border-radius: 10px;
+            border: 1px solid rgba( 255, 255, 255, 0.18);
+            backdrop-filter: blur(10px);
+            min-height: 500px;
+            .modalCartTitle {
+                color: $title-color;
+                margin: auto;
+                transform: translateX(70%);
+            }
+            #headerCart {
+                .row {
+                    color: $decs-color;
+                    font-weight: 500;
+                }
+            }
+            #prCart {
+                .row {
+                    color: $decs-color;
+                    padding: 10px;
+                }
+            }
+            .modalCartFooter {
+                margin-left: auto;
+                #totalCart {
+                    margin-left: 84%;
+                    .totalShow {
+                        font-size: 20px;
+                        color: $title-color;
+                    }
+                }
+            }
+        }
+    }
+}

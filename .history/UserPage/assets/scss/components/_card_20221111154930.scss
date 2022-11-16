@@ -1,0 +1,9 @@
+@import '../helpers/variable';
+.card {
+    border-radius: 50px !important;
+}
+
+.card__main {
+    display: flex;
+    gap: 10px
+}

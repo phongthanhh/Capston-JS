@@ -1,0 +1,7 @@
+@import '../helpers/variable';
+.product {
+    position: relative;
+    &__content {
+        width: 90%;
+    }
+}

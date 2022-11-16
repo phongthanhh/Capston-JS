@@ -1,0 +1,13 @@
+@import '../helpers/variable';
+.card__main {
+    .vCard {
+        width: 250px;
+        height: 300px;
+        overflow: hidden;
+        .card__img {
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

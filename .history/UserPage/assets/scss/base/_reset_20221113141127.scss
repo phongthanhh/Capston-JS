@@ -1,0 +1,24 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+a:hover {
+    text-decoration: none !important;
+    color: unset;
+}
+
+body {
+    min-height: 100vh;
+    background: url(https://i.ibb.co/M9LB3Kq/Glassmorphism-Background.png);
+    background-size: cover;
+}

@@ -1,0 +1,26 @@
+@import '../helpers/variable';
+.card__main {
+    .vCard {
+        width: 250px;
+        height: 300px;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px rgba(39, 38, 38, 0.666);
+        position: relative;
+        overflow: hidden;
+        .card__img {
+            img {
+                width: 100%;
+            }
+        }
+        .card__intro {
+            color: #fff;
+            font-size: 13px;
+            width: 100%;
+            &__desc {
+                p {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

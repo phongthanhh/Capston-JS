@@ -1,0 +1,15 @@
+@import '../helpers/variable';
+.btn__main {
+    border: 1px solid;
+    padding: 5px 10px;
+    width: 100%;
+    border-radius: 10px;
+    border-color: #fff;
+    color: #fff;
+    font-size: 13px;
+    width: 75px;
+    display: block;
+    i {
+        color: #fff;
+    }
+}

@@ -1,0 +1,5 @@
+class getProductService {
+    this.getProductList = () => {
+
+    }
+}
