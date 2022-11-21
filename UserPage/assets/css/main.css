@@ -58,10 +58,10 @@ body {
   header .myNavBar #navbarSupportedContent {
     width: 70% !important;
   }
-  header .myNavBar .navBtn button i {
+  header .myNavBar .navBtn a i {
     padding-right: 0;
   }
-  header .myNavBar .navBtn button span {
+  header .myNavBar .navBtn a span {
     display: none;
   }
   .modalCart .modal-dialog .modalCartTitleImg {
@@ -69,6 +69,9 @@ body {
   }
   .modalCart .modal-dialog .modalCartImg {
     display: none;
+  }
+  .modalCart .modal-dialog .modal-body #prCart img {
+    width: 100%;
   }
   .modalCart .modal-dialog .modal-body #prCart .row {
     font-size: 14px;
