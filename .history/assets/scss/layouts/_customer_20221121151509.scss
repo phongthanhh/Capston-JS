@@ -1,0 +1,20 @@
+.customer {
+    .logo {
+        &__apple {
+            position: relative;
+            color: #fff;
+            font-size: 12em;
+            text-shadow: 0 0 50px #0f0, 0 0 100px #0f0, 0 0 150px #0f0, 0 0 200px #0f0, 0 0 250px #0f0;
+            animation: animate__logo 5s linear infinite;
+        }
+    }
+    h3 {
+        text-transform: uppercase;
+        font-size: 1.5em;
+        letter-spacing: 2px;
+        margin-top: 15px;
+        color: $color-main;
+        filter: drop-shadow( 0 0 20px $color-main) drop-shadow( 0 0 63px $color-main);
+        animation: animate__text .7s steps(1) infinite;
+    }
+}

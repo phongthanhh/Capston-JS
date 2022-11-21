@@ -1,0 +1,76 @@
+@import '../helpers/variable';
+.btn__main {
+    border: 1px solid;
+    padding: 5px 10px;
+    width: 100%;
+    border-radius: 10px;
+    border-color: #fff;
+    color: #fff;
+    font-size: 13px;
+    width: 75px;
+    display: block;
+    transition: all .75s;
+    text-align: center;
+    font-weight: 600;
+    background: rgba(255, 255, 255, 0.383);
+    box-shadow: 0 5px 8px rgb(161 161 161 / 93%);
+    // color: $title-color;
+    i {
+        color: #fff;
+        transition: all .75s;
+    }
+    &:hover {
+        background: rgba( 255, 255, 255, 0.6);
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+        border: 1px solid rgba( 255, 255, 255, 0.18);
+        color: #010101;
+        color: $title-color;
+        i {
+            color: #010101;
+            color: $title-color;
+        }
+    }
+}
+
+.btnQuantity {
+    border: none;
+    background: $decs-color;
+    width: 25px;
+    height: 25px;
+    transition: all .2s;
+    i {
+        color: #fff;
+        line-height: 20px;
+    }
+    &:hover {
+        transform: scale(1.1)
+    }
+}
+
+.btnSecondary {
+    border: none;
+    background: rgba( 255, 255, 255, 0.6);
+    box-shadow: 0 5px 10px rgb(0 0 0 / 10%);
+    padding: 10px 25px;
+    color: $title-color;
+    font-weight: 600;
+    border-radius: 10px;
+    min-width: 45px;
+    transition: all .45s;
+    &:hover {
+        background: $title-color;
+        color: #fff;
+    }
+}
+
+.btnHeader {
+    @include styleText(1em, 500, $title-color);
+    @include styleButton($color-rgba, none, 10px, 5px, 10px, 0 5px 8px rgb(161 161 161 / 93%));
+    i {
+        padding-right: 5px;
+    }
+    ;
+    &:hover {
+        @include styleBtnHover
+    }
+}
