@@ -1,0 +1,63 @@
+.purpleBtn{
+    @include styleButton($color-purple-1, 1px solid $color-white-1, $pd-6, 15px);
+    @include styleText($fs-2, $fw-2, $color-white-1);
+    transition: all 0.5s;
+
+    &:hover{
+        @include styleButtonHover($color-white-1, 1px solid $color-purple-1, $color-purple-1);
+    }
+
+    i{
+        font-size: 24px;
+        margin-left: 5px;
+        vertical-align: bottom;
+    }
+}
+
+.redBtn{
+    @include styleButton(#faa0a0, 1px solid $color-white-1, $pd-6, 15px);
+    @include styleText($fs-2, $fw-2, $color-white-1);
+    transition: all 0.5s;
+
+    &:hover{
+        @include styleButtonHover($color-white-1, 1px solid #faa0a0, #faa0a0);
+    }
+}
+
+.blueBtn{
+    @include styleButton(#a5d5f7, 1px solid $color-white-1, $pd-6, 15px);
+    @include styleText($fs-2, $fw-2, $color-white-1);
+    transition: all 0.5s;
+
+    &:hover{
+        @include styleButtonHover($color-white-1, 1px solid #a5d5f7, #a5d5f7);
+    }
+}
+
+.deleteBtn{
+    @include styleButton(rgba(229,39,39,.1), none, 5px, 5px);
+    @include styleText(10px, $fw-2,#e52727);
+}
+
+.deleteBtn:hover{
+    @include styleButtonHover($color-white-1,1px solid #e52727, #e52727);
+}
+
+.viewBtn{
+    @include styleButton(rgba(255,197,0,.1), none, 5px, 5px 6px);
+    @include styleText(10px, $fw-2,#ffc500);
+}
+
+.viewBtn:hover{
+    @include styleButtonHover($color-white-1, 1px solid #ffc500, #ffc500);
+}
+
+.yellowBtn{
+    @include styleButton(#ffc500, 1px solid $color-white-1, $pd-6, 15px);
+    @include styleText($fs-2, $fw-2, $color-white-1);
+    transition: all 0.5s;
+
+    &:hover{
+        @include styleButtonHover($color-white-1, 1px solid #ffc500, #ffc500);
+    }
+}

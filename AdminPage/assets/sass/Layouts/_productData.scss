@@ -1,0 +1,51 @@
+.productData{
+   
+    .productData__left{
+        background-color: $color-white-1;
+        padding: 20px;
+        border-radius: 20px;
+        border: none;
+        box-shadow: 0 4px 30px rgb(95 94 231 / 7%);
+        .product-table{
+            border-radius: 20px;
+            // overflow: hidden;
+            display: block;
+             height: 420px;
+            overflow-y:auto;
+            th{
+                @include styleText($fs-2, $fw-3, $color-grey-1);
+                background-color: $color-bg-1;
+               height: 80px;
+               padding: 0 5px;
+            }
+            tbody{
+                @include styleText(12px, $fw-2, $color-grey-2);
+                height: 100px;    
+                tr{
+                    height: 60px;
+                    td{
+                        padding: 0 5px;
+                    }
+                    td:first-of-type{
+                        width: 5%;
+                    }
+                    td:nth-of-type(2){
+                        width: 29%;
+                    }
+                    td:last-of-type{
+                        width: 14%;
+                    }
+                }
+              
+            }
+        }
+    }
+    .productData__right{
+        height: 100%;
+        #chart {
+            height: 100%;
+            max-width: 650px;
+            margin: 35px auto;
+          }          
+    }
+}

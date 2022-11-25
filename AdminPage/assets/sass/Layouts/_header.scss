@@ -1,0 +1,17 @@
+header{
+    background-color: $color-white-1;
+    
+    .navbar-brand{
+        @include styleText($fs-3, $fw-3, $color-purple-1);
+    }
+
+    .navbar-nav{
+        .nav-item{
+            .nav-link{
+                @include styleText($fs-2, $fw-2, $color-purple-1);
+                padding: $pd-6 $pd-1;  
+            }
+        }
+     
+    }
+}

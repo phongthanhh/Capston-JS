@@ -1,0 +1,215 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #6362e7;
+}
+
+body {
+  background-color: #f4f6fd;
+}
+
+.purpleBtn {
+  background: #6362e7;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  padding: 15px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #ffffff;
+  transition: all 0.5s;
+}
+.purpleBtn:hover {
+  background: #ffffff;
+  border: 1px solid #6362e7;
+  color: #6362e7;
+}
+.purpleBtn i {
+  font-size: 24px;
+  margin-left: 5px;
+  vertical-align: bottom;
+}
+
+.redBtn {
+  background: #faa0a0;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  padding: 15px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #ffffff;
+  transition: all 0.5s;
+}
+.redBtn:hover {
+  background: #ffffff;
+  border: 1px solid #faa0a0;
+  color: #faa0a0;
+}
+
+.blueBtn {
+  background: #a5d5f7;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  padding: 15px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #ffffff;
+  transition: all 0.5s;
+}
+.blueBtn:hover {
+  background: #ffffff;
+  border: 1px solid #a5d5f7;
+  color: #a5d5f7;
+}
+
+.deleteBtn {
+  background: rgba(229, 39, 39, 0.1);
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 10px;
+  font-weight: 500;
+  color: #e52727;
+}
+
+.deleteBtn:hover {
+  background: #ffffff;
+  border: 1px solid #e52727;
+  color: #e52727;
+}
+
+.viewBtn {
+  background: rgba(255, 197, 0, 0.1);
+  border: none;
+  border-radius: 5px;
+  padding: 5px 6px;
+  font-size: 10px;
+  font-weight: 500;
+  color: #ffc500;
+}
+
+.viewBtn:hover {
+  background: #ffffff;
+  border: 1px solid #ffc500;
+  color: #ffc500;
+}
+
+.yellowBtn {
+  background: #ffc500;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  padding: 15px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #ffffff;
+  transition: all 0.5s;
+}
+.yellowBtn:hover {
+  background: #ffffff;
+  border: 1px solid #ffc500;
+  color: #ffc500;
+}
+
+header {
+  background-color: #ffffff;
+}
+header .navbar-brand {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #6362e7;
+}
+header .navbar-nav .nav-item .nav-link {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #6362e7;
+  padding: 8px 25px;
+}
+
+.function .function__content .function__right .search-box {
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+  padding: 0 25px 0 8px;
+  transition: all 0.2s;
+}
+.function .function__content .function__right .search-box:focus-within {
+  background-color: white;
+}
+.function .function__content .function__right .input-group-text, .function .function__content .function__right .form-control {
+  background-color: transparent;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #8e97b3;
+}
+.function .function__content .function__right .input-group-text:focus, .function .function__content .function__right .form-control:focus {
+  box-shadow: none;
+}
+.function .function__content .function__right .form-control {
+  padding: 25px 150px 25px 8px;
+}
+.function .function__content .function__right .form-control::placeholder {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #8e97b3;
+}
+.function .modal-body .input-group-text {
+  background-color: #6362e7;
+  width: 38px;
+}
+
+.productData .productData__left {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0 4px 30px rgba(95, 94, 231, 0.07);
+}
+.productData .productData__left .product-table {
+  border-radius: 20px;
+  display: block;
+  height: 420px;
+  overflow-y: auto;
+}
+.productData .productData__left .product-table th {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #4c5885;
+  background-color: #f4f6fd;
+  height: 80px;
+  padding: 0 5px;
+}
+.productData .productData__left .product-table tbody {
+  font-size: 12px;
+  font-weight: 500;
+  color: #8e97b3;
+  height: 100px;
+}
+.productData .productData__left .product-table tbody tr {
+  height: 60px;
+}
+.productData .productData__left .product-table tbody tr td {
+  padding: 0 5px;
+}
+.productData .productData__left .product-table tbody tr td:first-of-type {
+  width: 5%;
+}
+.productData .productData__left .product-table tbody tr td:nth-of-type(2) {
+  width: 29%;
+}
+.productData .productData__left .product-table tbody tr td:last-of-type {
+  width: 14%;
+}
+.productData .productData__right {
+  height: 100%;
+}
+.productData .productData__right #chart {
+  height: 100%;
+  max-width: 650px;
+  margin: 35px auto;
+}/*# sourceMappingURL=main.css.map */
