@@ -1,0 +1,42 @@
+.function{
+    .function__content{
+        .function__left{
+            
+        }
+
+        .function__right{
+            .search-box{
+                border: $bd-1 solid $color-white-1;
+                border-radius: 25px;
+                padding: 0 $pd-1 0 $pd-6;
+                transition: all 0.2s;
+
+                &:focus-within{
+                    background-color: white;
+                }
+            }
+
+           .input-group-text, .form-control{
+            background-color: transparent;
+            border: none;
+            @include styleText($fs-2, $fw-1, $color-grey-2);
+            &:focus{
+                box-shadow: none;
+            }
+           }
+
+           .form-control{
+            padding: $pd-1 $pd-8 $pd-1 $pd-6;
+            &::placeholder{
+                @include styleText($fs-2, $fw-1, $color-grey-2);
+               }
+           }  
+        }
+    }
+    .modal-body{
+        .input-group-text{
+            background-color: $color-purple-1;
+            width: 38px;
+        }
+    }
+}
