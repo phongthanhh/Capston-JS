@@ -12,8 +12,8 @@ function getProductData(){
         for(var i = 0; i < result.data.length; i++){
             productArray.push(result.data[i]);
         }
-        console.log("productArray",productArray);
-        chartDraw(66);
+
+        chartDraw(result.data);
     })
     .catch(function(error){
         console.log(error);
@@ -186,51 +186,70 @@ function searchProductMain(){
 }
 document.querySelector("#searchBox").onkeyup = searchProductMain;
 
-function chartDraw(number){
+function chartDraw(proArray){
     var typeArray = [];
     for(var i = 0; i < productArray.length; i++){
         var isExist = false;
         for(var j = 0; j < typeArray.length; j++){
-            if(typeArray[j] == productArray[i].type){
+            if(typeArray[j] == proArray[i].type){
                 isExist = true;
             }
         }
         if(!isExist){
-            typeArray.push(productArray[i].type);
+            typeArray.push(proArray[i].type);
         }
     }
+    
 
     var valueArray = [];
     for(var i = 0; i < typeArray.length; i++){
         valueArray[i] = 0;
-        for(var j = 0; j < productArray.length; j++){
-            if(typeArray[i] == productArray[j].type){
+        for(var j = 0; j < proArray.length; j++){
+            if(typeArray[i] == proArray[j].type){
                 valueArray[i]++;
             }
         }
     }
 
+    console.log(valueArray);
+
     var options = {
         series: valueArray,
         chart: {
-        width: 380,
+        width: 360,
         type: 'pie',
       },
       labels: typeArray,
       responsive: [{
-        breakpoint: 480,
+        breakpoint: 1200,
         options: {
           chart: {
-            width: 200
+            width: 320
           },
           legend: {
             position: 'bottom'
-          }
+          },
         }
-      }]
+      },{
+        breakpoint: 992,
+        options: {
+          chart: {
+            width: 360
+          },
+          legend: {
+            position: 'bottom'
+          },
+        }
+      }],
+      legend: {
+        position: 'bottom'
+      },
       };
       
+      document.querySelector("#chart").innerHTML = "";
+
       var chart = new ApexCharts(document.querySelector("#chart"), options);
       
       chart.render();
+
 }
