@@ -225,10 +225,4 @@ header .navbar-nav .nav-item .nav-link {
   height: 100%;
   max-width: 360px;
   margin: 35px auto;
-}
-
-@media screen and (max-width: 992px) {
-  .productData .productData__right {
-    background-color: #1e2f64;
-  }
 }/*# sourceMappingURL=main.css.map */
