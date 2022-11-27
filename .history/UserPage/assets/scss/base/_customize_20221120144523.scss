@@ -1,0 +1,15 @@
+// Reponsive
+@include reponsive( "extra-large") {
+    .product {
+        .card__main {
+            gap: 30px;
+        }
+    }
+}
+
+;
+@include reponsive( "extra-large") {
+    .modalCartImg {
+        display: none;
+    }
+}

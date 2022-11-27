@@ -1,0 +1,26 @@
+* {
+    padding: 1;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+a:hover {
+    text-decoration: none !important;
+    color: unset;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url(https://dl.dropboxusercontent.com/s/kcxf3v6djd0e0ha/bg2.jpg?dl=0);
+    // background-size: 150%;
+    background-position: center;
+    background-attachment: fixed;
+}

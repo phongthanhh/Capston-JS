@@ -1,0 +1,11 @@
+.customer {
+    .logo {
+        &__apple {
+            position: relative;
+            color: #fff;
+            font-size: 12em;
+            text-shadow: 0 0 50px #0f0, 0 0 100px #0f0, 0 0 150px #0f0, 0 0 200px #0f0, 0 0 250px #0f0;
+            animation: animate__logo 5s linear infinite;
+        }
+    }
+}

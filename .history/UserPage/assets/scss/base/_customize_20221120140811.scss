@@ -1,0 +1,8 @@
+// Reponsive
+@include reponsive( "extra-large") {
+    .product {
+        .card__main {
+            flex-wrap: wrap;
+        }
+    }
+}

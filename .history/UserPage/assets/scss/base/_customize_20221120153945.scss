@@ -1,0 +1,39 @@
+// Reponsive
+@include reponsive( "extra-large") {
+    .product {
+        .card__main {
+            gap: 30px;
+        }
+    }
+}
+
+@include reponsive("large") {
+    .modalCart {
+        .modal-dialog {
+            max-width: 85% !important;
+        }
+    }
+}
+
+@include reponsive( "medium") {
+    .modalCart {
+        padding-right: 0 !important;
+        .modal-dialog {
+            max-width: 100% !important;
+        }
+    }
+}
+
+;
+@include reponsive( "small") {
+    .modalCart {
+        .modal-dialog {
+            .modalCartTitleImg {
+                display: none;
+            }
+            .modalCartImg {
+                display: none;
+            }
+        }
+    }
+}

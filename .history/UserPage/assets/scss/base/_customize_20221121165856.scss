@@ -1,0 +1,101 @@
+// Reponsive
+@include reponsive( "extra-large") {
+    .product {
+        .card__main {
+            gap: 30px;
+        }
+    }
+    // Modal see
+    .modalSee {
+        .modal-body {
+            .infoPhone__row {
+                .infoPhone__desc {
+                    // padding: 0 1em !important;
+                    // font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+@include reponsive("large") {
+    .modalCart {
+        .modal-dialog {
+            max-width: 85% !important;
+        }
+    }
+    // Modal see
+    .modalSee {
+        .modal-body {
+            .infoPhone__row {
+                flex-direction: column;
+                .infoPhone__img {
+                    text-align: center;
+                    img {
+                        width: 55% !important;
+                    }
+                }
+                .infoPhone__desc {
+                    // padding: 0 !important;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+@include reponsive( "medium") {
+    .modalCart {
+        padding-right: 0 !important;
+        .modal-dialog {
+            max-width: 98% !important;
+        }
+    }
+}
+
+;
+@include reponsive( "small") {
+    header {
+        .myNavBar {
+            #navbarSupportedContent {
+                width: 70% !important;
+            }
+            .navBtn {
+                button {
+                    i {
+                        padding-right: 0;
+                    }
+                    span {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    .modalCart {
+        .modal-dialog {
+            .modalCartTitleImg {
+                display: none;
+            }
+            .modalCartImg {
+                display: none;
+            }
+            .modal-body {
+                #prCart {
+                    img {
+                        width: 100%;
+                    }
+                    .row {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+    .modalSee {
+        padding-right: 0 !important;
+        .modal-dialog {
+            max-width: 98% !important;
+        }
+    }
+}

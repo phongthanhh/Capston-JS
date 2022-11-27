@@ -1,0 +1,22 @@
+@mixin reponsive($screen) {
+    @if(map-has-key($map: $breakpoints, $key: $screen)) {
+        // Nếu có tên màn hình trong $breakpoints
+        // lấy giá trị màn hình gán vào value
+        $value: map-get($map: $breakpoints, $key: $screen);
+        @media screen and (max-width: $value) {
+            @content;
+        }
+    }
+    @else {
+        @warn 'Màn hình k tồn tại'
+    }
+}
+
+;
+@mixin styleText($fs, $fw, $color) {
+    font-size: $fs;
+    font-weight: $fw;
+    color: $color;
+}
+
+@mixin styleButoon($bg, $border, $radius, $py, $px) {}
