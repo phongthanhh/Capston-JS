@@ -92,7 +92,7 @@ function addNewProduct(){
         .then(function(result){
             getProductData();
             document.querySelector("#sanPhamVuaThem").innerHTML = name;
-            alert("Add Successfully");
+            swal("Success!", "Adding product successfully!", "success");
             document.querySelector("#productModal .close").click();
             document.querySelector("#productModal form").reset();
         })
@@ -106,7 +106,7 @@ function addNewProduct(){
 function deleteProductItem(id){
     productService.deleteProduct(id)
     .then(function(result){
-        alert("Delete Successfully");
+        swal("Success!", "Delete product successfully!", "success");
         getProductData();
     })
     .catch(function(error){
@@ -169,7 +169,7 @@ function updateProductMain(id){
         productService.updateProduct(id,product)
         .then(function(result){
             getProductData();
-            alert("Update Successfully");
+            swal("Success!", "Update product successfully!", "success");
             document.querySelector("#productModal .close").click();
             document.querySelector("#productModal form").reset();
         })
