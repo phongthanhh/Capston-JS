@@ -131,6 +131,14 @@ header .navbar-nav .nav-item .nav-link {
   padding: 8px 25px;
 }
 
+@media screen and (max-width: 992px) {
+  header .navbar-toggler .navbar-toggler-icon {
+    margin-top: 10px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #6362e7;
+  }
+}
 .function .function__content .function__right .search-box {
   border: 2px solid #ffffff;
   border-radius: 25px;
@@ -207,9 +215,20 @@ header .navbar-nav .nav-item .nav-link {
 }
 .productData .productData__right {
   height: 100%;
+  background-color: #ffffff;
+  padding: 20px 0;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0 4px 30px rgba(95, 94, 231, 0.07);
 }
 .productData .productData__right #chart {
   height: 100%;
-  max-width: 650px;
+  max-width: 360px;
   margin: 35px auto;
+}
+
+@media screen and (max-width: 992px) {
+  .productData .productData__right {
+    background-color: #1e2f64;
+  }
 }/*# sourceMappingURL=main.css.map */

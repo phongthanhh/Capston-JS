@@ -15,3 +15,14 @@ header{
      
     }
 }
+
+    @include responsive("large"){
+        header{
+            .navbar-toggler{
+                .navbar-toggler-icon{
+                    margin-top: 10px;
+                    @include styleText($fs-3, $fw-3, $color-purple-1);
+                }
+            }
+        }
+    }

@@ -216,21 +216,34 @@ function chartDraw(proArray){
     var options = {
         series: valueArray,
         chart: {
-        width: 380,
+        width: 360,
         type: 'pie',
       },
       labels: typeArray,
       responsive: [{
-        breakpoint: 480,
+        breakpoint: 1200,
         options: {
           chart: {
-            width: 200
+            width: 320
           },
           legend: {
             position: 'bottom'
-          }
+          },
         }
-      }]
+      },{
+        breakpoint: 992,
+        options: {
+          chart: {
+            width: 360
+          },
+          legend: {
+            position: 'bottom'
+          },
+        }
+      }],
+      legend: {
+        position: 'bottom'
+      },
       };
       
       document.querySelector("#chart").innerHTML = "";
@@ -239,5 +252,4 @@ function chartDraw(proArray){
       
       chart.render();
 
-      console.log("Rerender");
 }
