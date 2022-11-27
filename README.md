@@ -1,4 +1,3 @@
-# Capston-JS
 Link deploy:
 https://phongthanhh.github.io/Capston-JS/index.html
 
