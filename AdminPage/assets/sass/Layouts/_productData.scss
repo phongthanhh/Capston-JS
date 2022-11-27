@@ -56,12 +56,3 @@
           }          
     }
 }
-
-@include responsive("large"){
-    .productData{
-        .productData__right{
-            background-color: $color-blue-1;
-        }
-    }
-
-}
