@@ -187,7 +187,7 @@ const fetchData = () => {
 const renderCartTable = () => {
     let content = '';
     if (arrCart) {
-
+        arrCart = arrCart.reverse()
         arrCart.map((cartItem, index) => {
             content += `
             <div class="row align-items-center">
@@ -277,6 +277,7 @@ const delCartItem = id => {
                 'Your product has been deleted.',
                 'success'
             )
+            arrCart = arrCart.reverse()
             arrCart.splice(id, 1)
             renderCartTable()
             saveData()
@@ -286,6 +287,7 @@ const delCartItem = id => {
 
 // plus quantity
 const plusQuantity = id => {
+    arrCart = arrCart.reverse()
     arrCart[id].quantity += 1
     renderCartTable()
     saveData()
@@ -294,6 +296,8 @@ const plusQuantity = id => {
 // sub Quantity
 
 const subQuantity = id => {
+    arrCart = arrCart.reverse()
+
     console.log(id)
     if (arrCart[id].quantity > 1) {
         arrCart[id].quantity -= 1;

@@ -187,7 +187,10 @@ const fetchData = () => {
 const renderCartTable = () => {
     let content = '';
     if (arrCart) {
-
+        // arrCart = arrCart.reverse()
+        const newArrCart = [...arrCart]
+        newArrCart = newArrCart.reverse()
+        console.log('PhongThanh 🚀 ~> newArrCart', newArrCart)
         arrCart.map((cartItem, index) => {
             content += `
             <div class="row align-items-center">
