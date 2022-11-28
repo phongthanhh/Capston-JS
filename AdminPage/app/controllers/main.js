@@ -110,7 +110,7 @@ function deleteProductItem(id){
         getProductData();
     })
     .catch(function(error){
-
+        swal("API BAD RESPONSE!", error.message, "error");
     });
 }
 
@@ -132,12 +132,8 @@ function getProductByIDMain(id){
     })
     .catch(function(error){
         console.log(error);
-        var alertText = error.name;
         swal("API BAD RESPONSE!", error.message, "error");
     });
-    document.querySelector("#productModal .modal-footer").innerHTML = `
-    <button class = "btn yellowBtn" onclick = "updateProductMain('${id}')">Update</button>
-    `;
 }
 
 function updateProductMain(id){
@@ -180,6 +176,7 @@ function updateProductMain(id){
         })
         .catch(function(error){
             console.log(error);
+            swal("API BAD RESPONSE!", error.message, "error");
         });
     }
 }
