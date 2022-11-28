@@ -132,7 +132,12 @@ function getProductByIDMain(id){
     })
     .catch(function(error){
         console.log(error);
+        var alertText = error.name;
+        swal("API BAD RESPONSE!", error.message, "error");
     });
+    document.querySelector("#productModal .modal-footer").innerHTML = `
+    <button class = "btn yellowBtn" onclick = "updateProductMain('${id}')">Update</button>
+    `;
 }
 
 function updateProductMain(id){

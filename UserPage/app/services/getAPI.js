@@ -2,13 +2,13 @@ function getProductService() {
     this.getProductList = () => {
         return axios({
             method: 'get',
-            url: 'https://636a30e9c07d8f936d95cd4f.mockapi.io/CapProducts',
+            url: 'https://636a1269c07d8f936d924c14.mockapi.io/CapstoneProducts',
         });
     }
     this.getProduct = id => {
         return axios({
             method: 'get',
-            url: `https://636a30e9c07d8f936d95cd4f.mockapi.io/CapProducts/${id}`,
+            url: `https://636a1269c07d8f936d924c14.mockapi.io/CapstoneProducts/${id}`,
         });
     }
 }
