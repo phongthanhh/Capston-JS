@@ -110,7 +110,7 @@ function deleteProductItem(id){
         getProductData();
     })
     .catch(function(error){
-
+        swal("API BAD RESPONSE!", error.message, "error");
     });
 }
 
@@ -132,6 +132,7 @@ function getProductByIDMain(id){
     })
     .catch(function(error){
         console.log(error);
+        swal("API BAD RESPONSE!", error.message, "error");
     });
 }
 
@@ -175,6 +176,7 @@ function updateProductMain(id){
         })
         .catch(function(error){
             console.log(error);
+            swal("API BAD RESPONSE!", error.message, "error");
         });
     }
 }

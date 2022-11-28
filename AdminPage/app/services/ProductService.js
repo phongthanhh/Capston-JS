@@ -2,32 +2,32 @@ function ProductService(){
     this.getProduct = function(){
         return axios({
             method: 'get',
-            url: 'https://636a30e9c07d8f936d95cd4f.mockapi.io/CapProducts',
+            url: 'https://636a1269c07d8f936d924c14.mockapi.io/CapstoneProducts',
         });
     }
     this.addProduct = function(product){
         return axios({
             method: 'post',
-            url: 'https://636a30e9c07d8f936d95cd4f.mockapi.io/CapProducts',
+            url: 'https://636a1269c07d8f936d924c14.mockapi.io/CapstoneProducts',
             data: product,
         });
     }
     this.deleteProduct = function(id){
         return axios({
             method: 'delete',
-            url: `https://636a30e9c07d8f936d95cd4f.mockapi.io/CapProducts/${id}`
+            url: `https://636a1269c07d8f936d924c14.mockapi.io/CapstoneProducts/${id}`
         });
     }
     this.getProductByID = function(id){
         return axios({
             method: 'get',
-            url: `https://636a30e9c07d8f936d95cd4f.mockapi.io/CapProducts/${id}`,
+            url: `https://636a1269c07d8f936d924c14.mockapi.io/CapstoneProducts/${id}`,
         });
     }
     this.updateProduct = function(id, newData){
         return axios({
             method: 'put',
-            url: `https://636a30e9c07d8f936d95cd4f.mockapi.io/CapProducts/${id}`,
+            url: `https://636a1269c07d8f936d924c14.mockapi.io/CapstoneProducts/${id}`,
             data: newData,
         });
     }
